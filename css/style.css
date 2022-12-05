@@ -7,6 +7,9 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: beige;
+  /* background-image: url("https://media1.giphy.com/media/jjMzVt3jaDfzoKr49R/giphy.gif?cid=ecf05e47m6xjbetnqflnnhesha4wzg7qr80oyl2vxqk5nnru&rid=giphy.gif&ct=g"); */
+  background-size: 100%;
 }
 
 h1,
@@ -16,8 +19,65 @@ h4,
 h5,
 h6 {
   margin: 0;
+  
 }
 
 p {
   margin: 0;
+}
+
+header{
+  text-align: left;
+  background: #080808;
+  color: rgba(255, 0, 0, 0.2);
+  font-size: 25px;
+  padding: 5px;
+}
+header h1 {
+  display: inline-block;
+  font-size: 48px;
+  margin-left: 10px;
+  color: aliceblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+a {
+  color: papayawhip;
+  text-decoration: none;
+}
+
+.hero-banner{
+  background-image: url("/images/02-hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 200px;
+  width: 100%;
+  }
+.hero-banner div{
+  display: inline-block;
+  font-size: 18px;
+  float: right;
+  justify-content: end;
+  color: red;
+  background-color: wheat;
+  }
+.page-wrapper{
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: ;
 }
