@@ -45,7 +45,7 @@ header h1 {
   color: black;
   background-color: beige;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  float: left;
+  text-align: end;
 }
 
 
@@ -80,9 +80,9 @@ img{
 }
 .hero-banner{
   display: flex;
-  background-image: url("/images/02-hero-bg.jpg");
+  background-image: url("../images/02-hero-bg.jpg");
   background-repeat: no-repeat;
-  box-shadow: inset 0 0 0 1000px rgba(185, 0, 0, 0.2);
+  /* box-shadow: inset 0 0 0 1000px rgba(185, 0, 0, 0.2); */
   background-size: 100%;
   height: 200px;
   width: 100%;
@@ -173,7 +173,7 @@ img{
 #work1 {
   grid-area: work1;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
-  background-image: url("/images/02-portfolio-1.jpg");
+  background-image: url("../images/02-portfolio-1.jpg");
   border: black solid 5px;
 
 
@@ -181,7 +181,7 @@ img{
 
 #work1:hover {  
   box-shadow: inset 0 0 0 1000px rgba(238, 238, 238, 0);
-  background-image: url("/images/02-portfolio-1.jpg");
+  background-image: url("../images/02-portfolio-1.jpg");
   border: black solid 5px;
 
 
@@ -190,39 +190,39 @@ img{
   grid-area: work2;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
   border: black solid 5px;
-  background-image: url("/images/02-portfolio-2.jpg");
+  background-image: url("../images/02-portfolio-2.jpg");
 }
 #work2:hover {
   grid-area: work2;
   box-shadow: inset 0 0 0 1000px rgba(238, 238, 238, 0);
   border: black solid 5px;
-  background-image: url("/images/02-portfolio-2.jpg");
+  background-image: url("../images/02-portfolio-2.jpg");
 }
 #work3 {
   grid-area: work3;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
   border: black solid 5px;
-  background-image: url("/images/02-portfolio-3.jpg");
+  background-image: url("../images/02-portfolio-3.jpg");
 }
 #work3:hover {
   grid-area: work3;
   box-shadow: inset 0 0 0 1000px rgba(238, 238, 238, 0);
   border: black solid 5px;
-  background-image: url("/images/02-portfolio-3.jpg");
+  background-image: url("../images/02-portfolio-3.jpg");
 }
 
 #work4 {
   grid-area: work4;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
   border: black solid 5px;
-  background-image: url("/images/02-portfolio-4.jpg");
+  background-image: url("../images/02-portfolio-4.jpg");
   
 }
 #work4:hover {
   grid-area: work4;
   box-shadow: inset 0 0 0 1000px rgba(238, 238, 238, 0);
   border: black solid 5px;
-  background-image: url("/images/02-portfolio-4.jpg");
+  background-image: url("../images/02-portfolio-4.jpg");
   
 }
 
@@ -230,13 +230,13 @@ img{
   grid-area: work5;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
   border: black solid 5px;
-  background-image: url("/images/02-run-buddy.jpg");
+  background-image: url("../images/02-run-buddy.jpg");
 }
 #work5:hover {
   grid-area: work5;
   box-shadow: inset 0 0 0 1000px rgba(238, 238, 238, 0);
   border: black solid 5px;
-  background-image: url("/images/02-run-buddy.jpg");
+  background-image: url("../images/02-run-buddy.jpg");
 }
 
 .heading {
@@ -264,5 +264,159 @@ img{
 }
 .workGridArea p{
   font-size: 12px;
+}
+@media  (max-width: 769px) {
+  header{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  header h1{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .page-sectionabout{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "sectiontitle sectiontitle" 
+    "img p"; 
+    margin: 0 25px;
+  }
+  .sectiontitle{
+    grid-area: sectiontitle;
+    border-bottom: black solid 5px;
+    border-right: none;
+    text-align: left;
+    padding-right: 10px;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .page-sectionwork{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 150px 150px 150px 150px 150px;
+    grid-template-areas: 
+    "sectiontitle"
+    "work1"
+    "work2"
+    "work3"
+    "work4"
+    "work5";
+    margin: 0 25px;
+    
+    
+  }
+
+  .page-sectioncontact{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    grid-template-areas: "sectiontitle a";  */
+    margin: 0 25px;
+    
+    
+  }
+  .page-sectioncontact .sectiontitle{
+    width: 92%;
+    }
+  .page-sectioncontact nav {
+      width: 92%;
+      display:flex;
+      justify-content: start; 
+      align-items: start;
+      margin: 0;
+      padding: 0;
+      
+  }
+  .page-sectioncontact nav ul li {
+    display: flex;
+    border-bottom: black solid 2px;
+    flex-direction: column; 
+    text-align: left;
+    margin: 0; padding: 0;
+      
+  }
+  .page-sectioncontact nav ul {
+    
+    margin: 0; padding: 0;
+    
+  }
+        
+}
+
+@media (min-width: 770px) and (max-width: 979px) {
+  header{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  header h1{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .page-sectionabout{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "sectiontitle sectiontitle" 
+    "img p"; 
+    margin: 0 25px;
+  }
+  .sectiontitle{
+    grid-area: sectiontitle;
+    border-bottom: black solid 5px;
+    border-right: none;
+    text-align: left;
+    padding-right: 10px;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .page-sectionwork{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 150px 150px 150px;
+    grid-template-areas: 
+    "sectiontitle sectiontitle"
+    "work1 work1"
+    "work1 work1"
+    "work2 work3"
+    "work4 work5"
+    ;
+    
+    margin: 0 25px;
+    
+    
+  }
+
+  .page-sectioncontact{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    grid-template-areas: "sectiontitle a";  */
+    margin: 0 25px;
+    
+    
+  }
+  .page-sectioncontact .sectiontitle{
+    width: 92%;
+    }
+  .page-sectioncontact nav {
+      width: 92%;
+       
+      
+  }
+  
+  
 }
 
