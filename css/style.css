@@ -173,7 +173,7 @@ img{
 #work1 {
   grid-area: work1;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/02-portfolio-4.jpg");
   border: black solid 5px;
 
 
@@ -181,7 +181,7 @@ img{
 
 #work1:hover {  
   box-shadow: inset 0 0 0 1000px rgba(238, 238, 238, 0);
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/02-portfolio-4.jpg");
   border: black solid 5px;
 
 
@@ -190,39 +190,39 @@ img{
   grid-area: work2;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
   border: black solid 5px;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/02-portfolio-1.jpg");
 }
 #work2:hover {
   grid-area: work2;
   box-shadow: inset 0 0 0 1000px rgba(238, 238, 238, 0);
   border: black solid 5px;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/02-portfolio-1.jpg");
 }
 #work3 {
   grid-area: work3;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
   border: black solid 5px;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/02-portfolio-2.jpg");
 }
 #work3:hover {
   grid-area: work3;
   box-shadow: inset 0 0 0 1000px rgba(238, 238, 238, 0);
   border: black solid 5px;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/02-portfolio-2.jpg");
 }
 
 #work4 {
   grid-area: work4;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
   border: black solid 5px;
-  background-image: url("../images/02-portfolio-4.jpg");
+  background-image: url("../images/02-portfolio-3.jpg");
   
 }
 #work4:hover {
   grid-area: work4;
   box-shadow: inset 0 0 0 1000px rgba(238, 238, 238, 0);
   border: black solid 5px;
-  background-image: url("../images/02-portfolio-4.jpg");
+  background-image: url("../images/02-portfolio-3.jpg");
   
 }
 
